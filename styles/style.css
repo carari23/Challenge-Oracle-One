@@ -1,0 +1,137 @@
+* {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body {
+    background-color: #F3F5FC !important;
+}
+
+.container {
+    display: block;
+}
+
+.logo {
+    padding-top: 35px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+
+.text-area {
+    border: none;
+    color: #0A3871;
+    background: transparent;
+    text-transform: lowercase;
+    width: 100%;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.mensaje {
+    background: white;
+    background-image: url(../img/Muñeco.png);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    width: 85%;
+    background-size: contain;
+    text-align: center;
+    box-shadow: 4px 4px 8px 2px #ccc;
+    background-position: center;
+    height: 90vh;
+    margin-top: -100px;
+    padding: 30px;
+
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.mensaje::placeholder {
+    color: #343A40;
+    font-size: 22px;
+    line-height: 25px;
+    padding-top: 540px;
+    font-weight: bold;
+}
+
+.botones {
+    display: flex;
+    margin-top: 18px;
+
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    font-size: 25px;
+}
+
+.btn-desencriptar {
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+.copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    font-size: 25px;
+}
+
+.informacion {
+    color: #495057;
+    font-size: 18px;
+}
+
+@media (max-width:750px) {
+
+    .mensaje {
+        margin-top: 60px;
+        width: inherit;
+        height: auto !important;
+    }
+
+    .mensaje::placeholder {
+        font-size: 40px;
+        line-height: 70px;
+        padding-top: 100px;
+    }
+
+    .mensaje {
+        background: white;
+    }
+
+}
